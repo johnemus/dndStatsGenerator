@@ -63,8 +63,8 @@ public class statsRoller {
         Die die = new Die(6);
 
         for (int i = 0; i < matrix.length; i++) {
+            Arrays.fill(rolls, 0);
             for (int j = 0; j < rolls.length; j++) {
-                Arrays.fill(rolls, 0);
                 rolls[j] = die.roll();
                 if (rOnes) {
                     while (rolls[j] == 1) {
