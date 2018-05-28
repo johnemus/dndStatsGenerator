@@ -20,7 +20,8 @@ public class statsRoller {
                 System.out.println(Arrays.toString(stats));
                 System.out.println(Arrays.toString(stats4d6(rerollOnes)));
             }else if (input == 3) {
-
+                System.out.println(Arrays.toString(stats));
+                System.out.println(Arrays.toString(colvillian(rerollOnes)));
             }else if (input == 4) {
                 if (rerollOnes) {
                     rerollOnes = false;
