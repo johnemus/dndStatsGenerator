@@ -8,17 +8,17 @@ public class statsRoller {
         String[] stats = {"STR", "DEX", "CON", "INT", "WIS", "CHA"};
         while (input >= 0) {
             System.out.println("Welcome!  How do you wish to generate your stats?");
-            System.out.println("1) 3d6\n2)4d6 highest 3\n3) Colvillian\n4) Enable/Disable Rerolling of Ones");
-            System.out.println("input a negative number to quit");
+            System.out.println("1) 3d6\n2) 4d6 highest 3\n3) Colvillian\n4) Enable/Disable Rerolling of Ones");
+            System.out.println("input a negative number to quit\n");
 
             input = s.nextInt();
 
             if (input == 1) {
-                System.out.println(stats);
-                System.out.println(stats3d6(rerollOnes));
+                System.out.println(Arrays.toString(stats));
+                System.out.println(Arrays.toString(stats3d6(rerollOnes)));
             }else if (input == 2) {
-                System.out.println(stats);
-                System.out.println(stats4d6(rerollOnes));
+                System.out.println(Arrays.toString(stats));
+                System.out.println(Arrays.toString(stats4d6(rerollOnes)));
             }else if (input == 3) {
 
             }else if (input == 4) {
